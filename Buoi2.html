@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p>Enter a number:</p>
+  Today: <input type="number" id="today" onkeyup="myFunction()">
+  <br>
+  Display: <span id="demo"></span></p>
+
+
+  <script>
+    function myFunction() {
+      var todayInput = document.getElementById("today").value;
+      var displayInput = document.getElementById("demo").value;
+      var result = "";
+
+      if (todayInput === "1") {
+        result = "CN";
+      } else if (todayInput === "2") {
+        result = "Thứ 2";
+      } else if (todayInput === "3") {
+        result = "Thứ 3";
+      } else if (todayInput === "4") {
+        result = "Thứ 4";
+      } else if (todayInput === "5") {
+        result = "Thứ 5";
+      } else if (todayInput === "6") {
+        result = "Thứ 6";
+      } else if (todayInput === "7") {
+        result = "Thứ 7";
+      } else {
+        result = "Chỉ được nhập số từ 1 đến 7";
+      }
+
+      document.getElementById("demo").innerHTML = result;
+    }
+  </script>
+</body>
+
+</html>
